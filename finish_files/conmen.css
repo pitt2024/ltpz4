@@ -1,0 +1,61 @@
+ul,li,ol,a,p,h1,h2,h3,h4,h5,h6,i,span,div,table,tr,td,th,input,select,form,button{
+	list-style: none;
+	text-decoration: none;
+	outline: none;
+	font-style: normal;
+	　-moz-user-select: none; /*火狐*/
+    -webkit-user-select: none; /*webkit浏览器*/
+    -ms-user-select: none; /*IE10*/
+    -khtml-user-select: none; /*早期浏览器*/
+    user-select: none;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+body,html{
+	font-size: 100px;
+	overflow-x: hidden;
+	font-family: PingFang SC; 
+	background: #F8F8F8;
+	　-moz-user-select: none; /*火狐*/
+    -webkit-user-select: none; /*webkit浏览器*/
+    -ms-user-select: none; /*IE10*/
+    -khtml-user-select: none; /*早期浏览器*/
+    user-select: none;
+}
+textarea{
+    display: block;
+}
+.floatLeft{
+	float: left;
+}
+.floatRight{
+	float: right;
+}
+ .clearfix:after{/*伪元素是行内元素 正常浏览器清除浮动方法*/
+        content: "";
+        display: block;
+        height: 0;
+        clear:both;
+        visibility: hidden;
+    }
+    .clearfix{
+        *zoom: 1;/*ie6清除浮动的方式 *号只有IE6-IE7执行，其他浏览器不执行*/
+    }
+    .toastMsg {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 0.1rem;
+        width: 200px;
+        top: 50%;
+        left: 50%;
+        padding: 0.1rem 0.2rem 0.1rem 0.2rem;
+        color: #ffffff;
+        font-size: 14px;
+        display: none;
+        z-index: 99;
+    text-align: center;
+      }
+

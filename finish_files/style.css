@@ -1,0 +1,912 @@
+body{
+  background: #F8F8F8;
+}
+.header {
+  height: 0.41rem;
+  width: 100%;
+  position: relative;
+  border-bottom: 0.01rem solid #f8f8f8;
+  background: #ffffff;
+}
+.header .header-title {
+  padding-left: 0.15rem;
+  padding-right: 0.15rem;
+  width: 95%;
+  margin: 0 auto;
+  height: 0.4rem;
+  position: relative;
+}
+
+.header .header-title .header-title-left {
+  width: 0.28rem;
+  height: 0.28rem;
+  position: absolute;
+  left: 0.25rem;
+  top: 0;
+}
+
+.header .header-title .header-title-left .returnNext {
+  width: 0.13rem;
+  height: 0.13rem;
+  display: block;
+  border-left: 0.025rem solid #5c5c5c;
+  border-bottom: 0.025rem solid #5c5c5c;
+  -webkit-transform: rotate(45deg) translate(0rem, 0.18rem);
+  -moz-transform: rotate(45deg) translate(0rem, 0.18rem);
+  -ms-transform: rotate(45deg) translate(0rem, 0.18rem);
+  -o-transform: rotate(45deg) translate(0rem, 0.18rem);
+  transform: rotate(45deg) translate(0rem, 0.18rem);
+  cursor: pointer;
+}
+
+.header .header-title .header-title-center {
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header .header-title .header-title-center p {
+  font-size: 0.16rem;
+  color: #333333;
+  text-align: center;
+  line-height: 0.24rem;
+}
+.header .header-title .header-title-center .paymentPhone {
+  font-weight: 300;
+  font-size: 0.13rem;
+  line-height: 0.18rem;
+}
+.header .header-title .header-title-right {
+  width: 0.4rem;
+  height: 0.42rem;
+  position: absolute;
+  right: 0.25rem;
+  top: 0;
+}
+
+.header .header-title .header-title-right .close {
+  width: 0.22rem;
+  height: 0.22rem;
+  font-size: 0.2rem;
+  color: #333333;
+  margin-top: 0.09rem;
+  cursor: pointer;
+  text-align: center;
+  line-height: 0.22rem;
+  position: relative;
+}
+.header .header-title .header-title-right .close img:nth-of-type(1) {
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+}
+.close-img {
+  -webkit-transform: rotate(90deg) translate(0px, 18px) scale(0.8);
+  -moz-transform: rotate(90deg) translate(0px, 18px) scale(0.8);
+  -ms-transform: rotate(90deg) translate(0px, 18px) scale(0.8);
+  -o-transform: rotate(90deg) translate(0px, 18px) scale(0.8);
+  transform: rotate(90deg) translate(0px, 18px) scale(0.8);
+  position: absolute;
+}
+.header .header-title .header-title-right .myul {
+  margin-top: 0.04rem;
+}
+
+.header .header-title .header-title-right .myul li {
+  width: 0.03rem;
+  height: 0.03rem;
+  background: #333333;
+  -webkit-border-radius: 0.03rem;
+  -moz-border-radius: 0.03rem;
+  border-radius: 0.03rem;
+  margin-top: 0.06rem;
+}
+
+.bodyer {
+  /* background: linear-gradient(180deg, #ffffff 0%, #f8f8f8 59.06%); */
+  background: #F8F8F8;
+  /* position: absolute; */
+  height: calc(100% - 0.42rem);
+  width: 100%;
+}
+
+.bodyer .MayActive {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1009;
+  overflow: hidden;
+}
+.bodyer .JuneActive {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1009;
+  overflow: hidden;
+}
+.bodyer .doubleEle{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background: rgb(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  z-index: 1009;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.doubleEle .closeBtn {
+  width: 0.27rem;
+  height: 0.27rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0.72rem;
+  right: 0.29rem;
+  opacity: 0.8;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  transform: rotate(45deg);
+}
+.doubleEle .closeBtn .plusSign{
+  width: 50%;
+  height: 0.01rem;
+  background-color: #fff;
+}
+.doubleEle .closeBtn .verticalLine {
+  position: absolute;
+  transform: rotate(90deg);
+}
+.doubleEle img {
+   width: 100%;
+}
+.doubleEle .jumpBtn {
+  width: 2.06rem;
+  height: 0.53rem;
+  margin-top: -0.53rem;
+  background-color: transparent;
+}
+
+.bodyer .body-content {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  min-height: 2.6rem;
+  padding-bottom: .1rem;
+}
+
+.bodyer .body-content .recharge {
+  width: 100% !important;
+  margin: 0 auto;
+  padding-bottom: 0.2rem;
+  /* background: #FFFFFF; */
+}
+
+.bodyer .body-content .recharge .recharge-title {
+  width: 100%;
+  /* height: 0.42rem; */
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 0.17rem;
+}
+.bodyer .body-content .recharge .renewal-title {
+  padding-top: 0.19rem;
+  height: 0.54rem;
+}
+.bodyer .body-content .recharge .recharge-title span {
+  display: block;
+}
+.bodyer .body-content .recharge .recharge-title .recharge-title-left {
+  /* width: 0.28rem; */
+  /* height: 0.28rem; */
+  font-size: 0.24rem;
+  text-align: center;
+  line-height: 0.28rem;
+  color: #ffffff;
+  display: inline-block;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  display: block;
+  margin:0 auto .12rem;
+}
+.bodyer .body-content .recharge .recharge-title .recharge-title-left img {
+  width: 0.54rem;
+  height: 0.54rem;
+}
+
+.bodyer .body-content .recharge .recharge-title .colorRed.paySuccess {
+ margin: .24rem auto .19rem;
+}
+.bodyer .body-content .recharge .recharge-title .colorRed.renewal-paySuccess {
+  margin: .24rem auto .43rem;
+ }
+ .bodyer .body-content .recharge .recharge-title .renewal-paySuccessTip{
+  font-family: PingFangSC, PingFang SC;
+    font-weight: 400;
+    font-size: 0.14rem;
+    color: #E60027;
+    position: absolute;
+    top: 1.45rem;
+    width: 3.74rem;
+    height: 0.20rem;
+    left: 0.2rem;
+ }
+.bodyer .body-content .recharge .recharge-title .colorRed {
+  color: #333;
+  font-weight: 500;
+  line-height: 0.25rem;
+  font-size: 0.18rem;
+  /* margin-left: 0.12rem; */
+}
+.bodyer .body-content .recharge .colorGray {
+  color: #666;
+  font-weight: 500;
+  line-height: 0.2rem;
+  font-size: 0.24rem;
+  margin-left: 0.12rem;
+}
+.bodyer .body-content .body-form{
+  background: #fff;
+}
+.bodyer .body-content .renewal-body-form{
+  background: #f8f8f8;
+}
+.bodyer .body-content .body-form .recharge-title-content {
+  width: 88%;
+  margin: 6% auto 0;
+  font-size: 0.15rem;
+}
+.bodyer .body-content .body-form .renewal-title-content{
+  margin-left: 0.24rem;
+}
+.bodyer .body-content .body-form .recharge-title-content .recharge-contents {
+  height: auto;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 0.1rem;
+  display: flex;
+  justify-content:space-between;
+}
+.bodyer .body-content .body-form .recharge-title-content .longStyle {
+  min-height: 0.32rem;
+  height: auto;
+}
+
+.bodyer .body-content .body-form .recharge-title-content .recharge-contents .recharge-contents-up {
+  font-family: PingFang SC;
+  font-style: normal;
+  font-weight: normal;
+  /* font-size: 0.16rem; */
+  line-height: 0.22rem;
+  color: #666;
+  /* width: 40%; */
+  text-align: left;
+}
+
+.bodyer .body-content .body-form .recharge-title-content .recharge-contents .recharge-contents-down {
+  display: inline-block;
+  width: 1.8rem;
+  word-wrap: break-word;
+  font-family: PingFang SC;
+  font-style: normal;
+  font-weight: normal;
+  /* font-size: 0.16rem; */
+  line-height: 0.22rem;
+  color: #333333;
+  margin-left: 0.12rem;
+  text-align: right;
+  flex: 1;
+}
+.bodyer .body-content .body-form .recharge-title-content .initpayfee .recharge-contents-down {
+  width: auto;
+}
+.bodyer .body-content .body-form .recharge-button {
+  width: 85.5%;
+  margin: 0.3rem auto 0;
+}
+.bodyer .body-content .body-form .renewal-recharge-button {
+  width: auto;
+  margin: 0.3rem 0.42rem 0rem 0rem;
+}
+.bodyer .body-content .body-form .recharge-button .look-button {
+  border: 1px solid #e60027;
+  box-sizing: border-box;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  border-radius: 0.4rem;
+  width: 47%;
+  height: 0.42rem;
+  background: #ffffff;
+  font-family: PingFang SC;
+  font-style: normal;
+  /* font-weight: 500; */
+  font-size: 0.18rem;
+  text-align: center;
+  color: #e60027;
+  display: inline-block;
+  line-height: 0.42rem;
+  cursor: pointer;
+}
+
+.bodyer .body-content .body-form .recharge-button .submitbtn {
+  width: 47%;
+  height: 0.42rem;
+  background: #e60027;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  border-radius: 0.4rem;
+  font-family: PingFang SC;
+  font-style: normal;
+  /* font-weight: 500; */
+  font-size: 0.18rem;
+  text-align: center;
+  color: #ffffff;
+  display: inline-block;
+  line-height: 0.42rem;
+  cursor: pointer;
+}
+.bodyer .body-content .body-form .recharge-button .renewal-submitbtn{
+  width: 3.3rem;
+  height: 0.42rem;
+}
+.bodyer .body-content .body-form .recharge-button .chargeReturnBtn {
+  width: 47%;
+  height: 0.41rem;
+  background: #fbfbfb;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  border-radius: 0.4rem;
+  font-family: PingFang SC;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.18rem;
+  text-align: center;
+  color: #e60027;
+  display: block;
+  line-height: 0.41rem;
+  cursor: pointer;
+  margin: 0 auto;
+  border: 1px solid #e60027;
+}
+.bodyer .bannerOne {
+  width: 95%;
+  /* height: 1rem; */
+  margin: 0.2rem auto 0;
+  -webkit-border-radius: 0.04rem;
+  -moz-border-radius: 0.04rem;
+  border-radius: 0.04rem;
+  overflow: hidden;
+}
+.bodyer .bannerTwo {
+  width: 95%;
+  height: .94rem;
+  background: #ffffff;
+  -webkit-border-radius: 0.08rem;
+  -moz-border-radius: 0.08rem;
+  border-radius: 0.08rem;
+  margin: 0.2rem auto;
+}
+.bodyer .bannerTwo .more {
+  height: 0.34rem;
+  margin-top: 0.12rem;
+  margin-bottom: 0.15rem;
+}
+.bodyer .bannerTwo .swiper-pagination {
+  display: none;
+}
+.bodyer .bannerTwo .more {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  /* margin: 4.266667vw 0;
+  color: #969799; */
+}
+.bodyer .bannerTwo .more a {
+  font-family: PingFang SC;
+  font-style: normal;
+  font-weight: normal;
+  padding: 0.138rem 0.138rem 0;
+  display: flex;
+  font-size: 0.16rem;
+  color: #bbb;
+  font-weight: 600;
+  /* margin-left: 0.12rem; */
+  font-weight: 400;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.bodyer .bannerTwo .more a:before,
+.bodyer .bannerTwo .more a:after {
+  display: block;
+  /* -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1; */
+  box-sizing: border-box;
+  height: 1px;
+  border-color: inherit;
+  border-style: inherit;
+  border-width: 1px 0 0;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  content: "";
+  background: #ddd;
+  width: 34%;
+}
+.bodyer .bannerTwo .more a:before {
+  margin-right: 5%;
+}
+.bodyer .bannerTwo .more a:after {
+  margin-left: 5%;
+}
+.bodyer .bannerTwo .default-container{
+  height: 100%;
+}
+.col25 {
+  width: 25%;
+}
+.col25 img {
+  width: 0.27rem;
+  height: 0.27rem;
+}
+.col25 .fonts {
+  text-align: center;
+  font-size: 0.14rem;
+  /* line-height: 0.28rem; */
+  text-align: center;
+  color: #333;
+}
+.new-container{
+  height: .92rem;
+}
+.swiper-container {
+  width: 100%;
+  /* height: 1rem; */
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.swiper-pagination {
+  height: 3px;
+  position: absolute;
+  bottom: 105px !important;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 0.18rem;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  justify-content: center;
+  height: 0.92rem;
+}
+.bannerOne .swiper-slide {
+  width: 3.84rem;
+}
+.colorred {
+  color: #e60027 !important;
+}
+.failure {
+  font-size: 0.14rem;
+  color: #999999;
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: 0.05rem;
+  margin-top: 0.06rem;
+}
+.winterTip {
+  color: #666666;
+  width: 95%;
+  margin: auto;
+}
+.mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  display: none;
+}
+.popup {
+  width:100%;
+  height: 4.8rem;
+  position: absolute;
+  left: 50%;
+  top: 13%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  display: none;
+}
+.popup img {
+  width: 2.8rem;
+  height: 3.38rem;
+  display: block;
+  margin: auto;
+  border-radius: 7px;
+}
+.popup img[src=""],
+.popup img:not([src]),
+.popup img[src="?version=cdn_version"] {
+  opacity: 0;
+}
+.popup .get_gift {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 35%;
+  width: 50%;
+  height: 0.7rem;
+  z-index: 1005;
+  border-radius: 0.25rem;
+}
+.popup .advertising {
+  position: absolute;
+  left: 22%;
+  transform: translateX(-50%);
+  bottom: 31%;
+  height: 0.2rem;
+  font-size: 0.14rem;
+  z-index: 1005;
+  background: #c1b9b9;
+  color: #fff;
+  width: 0.36rem;
+  border-radius: 3px;
+  text-align: center;
+}
+.popup .close_btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0.9rem;
+  width: 0.35rem;
+  height: 0.35rem;
+  background-image: url("../image/close1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+/* 倒计时样式 */
+.popup .countDown{
+  color: #fff;
+  font-size: 0.17rem;
+  font-weight: 600;
+  /* position: absolute; */
+  left: 50%;
+  transform: translateX(-50%);
+  top: 60%;
+}
+.popup .noFirstButton{
+  width: 35%;
+    position: absolute;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 52%;
+}
+.popup .buttonText{
+  position: absolute;left: 50%;top: 59%;transform: translateX(-50%);height: auto;height: 0.42rem;width: 1.9rem;background-image: url('../image/buttonBg.png');background-repeat: no-repeat;background-size: contain;background-position: center;
+}
+.popup .buttonTextFont{
+  font-size: 0.16rem;left: 50%;color: #fff;position: absolute;transform: translate(-50%,-50%);font-weight: 600;top: 45%;width:100%;text-align: center
+}
+
+/* 改版 */
+.bannerSwipe {
+  margin: .1rem auto;
+  /*width: 3.70rem;*/
+  width:90%;
+  height: 2.71rem;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: .12rem;
+}
+.bannerSwipe .title {
+  font-size: .18rem;
+  font-weight: 500;
+  color: #333333;
+  line-height: .25rem;
+  margin: 0 0 .12rem;
+}
+.bannerSwipe .welfareWrap{
+  display: flex;
+  width: 100%;
+}
+.welfareWrap .welfareAll{
+  width: 43.5%;
+  background: linear-gradient(180deg, #fff4e5 0%, #fffcf8 100%);
+}
+.welfareWrap .welfareLeft{
+  width: 1.6rem;
+  height: 2.34rem;
+  background: linear-gradient(180deg, #fff4e5 0%, #fffcf8 100%);
+  border-radius: 6px;
+}
+.welfareLeft .circleBgDiv{
+  height: 100%;
+}
+.welfareLeft .circleBg{
+  display: block;
+  width: .98rem;
+  height: .98rem;
+  background: linear-gradient(180deg, #ffe2ca 0%, #fefcfa 100%);
+  margin: .24rem auto 0;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.welfareLeft .circleBg img{
+  display: block;
+  width: .6rem;
+  height:.6rem;
+  margin: .26rem auto 0;
+}
+.welfareLeft .activityTitle{
+  font-size: .16rem;
+  font-weight: normal;
+  color: #333333;
+  line-height: .24rem;
+  text-align: center;
+  margin: .18rem 0 0;
+}
+.welfareLeft .secondTitle {
+  font-size:.12rem;
+  font-weight: normal;
+  color: #e60027;
+  line-height: .18rem;
+  text-align: center;
+  margin: 0;
+}
+.welfareLeft .btn {
+  width: .87rem;
+  height: .28rem;
+  line-height: .28rem;
+  background: #ffeee7;
+  border-radius: .14rem;
+  font-size: .13rem;
+  text-align: center;
+  color: #e60027;
+  margin: 0 auto 0;
+}
+.welfareLeft .swiper-slide{
+  background: linear-gradient(180deg, #fff4e5 0%, #fffcf8 100%);
+}
+.welfareWrap .welfareRight {
+  width: 54%;
+}
+.welfareWrap .welfareRight .activityTitle{
+  font-size: .16rem;
+  color: #333333;
+  line-height: .24rem;
+  margin: .16rem 0 0 .14rem;
+}
+.welfareWrap .welfareRight .secondTitle {
+  font-size: .14rem;
+  color: #666666;
+  line-height: 20px;
+  margin: .02rem 0 .06rem .14rem;
+}
+.welfareWrap .welfareRight .btn {
+  width: .60rem;
+  height: .20rem;
+  background: linear-gradient(
+    270deg,
+    rgba(136, 141, 151, 0.25),
+    rgba(177, 183, 195, 0.25)
+  );
+  border-radius: .15rem;
+  text-align: center;
+  line-height: .20rem;
+  font-size: .12rem;
+  margin-left: .14rem;
+}
+.welfareWrap .welfareRight .btn a,.welfareWrap .welfareLeft .btn a{
+  color: #666666;
+}
+.welfareWrap .welfareRight .activityImg {
+  position: absolute;
+  display: block;
+  width: .60rem;
+  height:.60rem;
+  right: .09rem;
+  bottom: .12rem;
+}
+.welfareWrap .welfareRight .welfareRightTop {
+  position: relative;
+  overflow: hidden;
+  /* width: 2rem; */
+  height: 1.12rem;
+  background: linear-gradient(270deg, #f6faff 0%, #e9f3ff 100%);
+  border-radius: 6px;
+  margin: 0 0 .10rem .10rem;
+}
+.welfareWrap .welfareRight .welfareRightBottom {
+  position: relative;
+  overflow: hidden;
+  /* width: 2rem; */
+  height: 1.12rem;
+  background: linear-gradient(270deg, #fffcf8 0%, #fff4e5 100%);
+  border-radius: 6px;
+  margin-left: .1rem;
+}
+.toAPPBanner{
+  width: 95%;
+  height: .95rem;
+  border-radius: 6px;
+  margin:.2rem auto .16rem;
+  background: url(image/toAPPNew.png) center no-repeat;
+  background-size: 100%;
+}
+.bannerActivity{
+  width: 93.4%;
+  /* height: .95rem; */
+  border-radius: 6px;
+  margin:.2rem auto .16rem;
+}
+.bannerActivity img{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.checkOrderBtn,.continuePay{
+  float: left;
+  width: 45%;
+  height: .7rem;
+  display: block;
+  border: 1px solid #999;
+  background: #fff;
+  border-radius: 30px;
+  color: #999;
+  /* padding: .09rem 0; */
+  margin-top: .2rem;
+  font-size: .28rem;
+  text-align: center;
+  line-height: .7rem;
+}
+.continuePay{
+  float: right;
+  background: #ff6024;
+  border: 1px solid #ff6024;
+  color: #fff;
+}
+/* 充值返券弹窗样式 */
+.rechargeBox{
+  position: absolute;
+  height: 1.9rem;
+  margin: auto;
+  top: .8rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 2.7rem;
+  left: 50%;
+  margin-left: -1.35rem;
+}
+.rechargeMain{
+  width: 1.3rem;
+  height: 1.9rem;
+  background: #FFFFFF;
+  border-radius: 0.08rem;
+}
+.rechargeMain .hotTitle{
+  width: .76rem;
+  height: .15rem;
+  background: url(../image/hotText.png) no-repeat center;
+  background-size: 100%;
+  font-size: .1rem;
+  color: #F83333;
+  text-align: center;
+  line-height: .15rem;
+  margin: auto;
+}
+.rechargeMain .phoneImg{
+  width: auto;
+  height: 1rem;
+  display: block;
+  margin-top: 0.04rem;
+}
+.rechargeMain .phoneName{
+  font-weight: 500;
+  font-size: .13rem;
+  color: #3D3D3D;
+  height: .18rem;
+  line-height: .18rem;
+  text-align: center;
+  margin: 0.06rem auto;
+}
+.rechargeMain .couponPrice{
+  font-weight: 500;
+  font-size: .18rem;
+  color: #E60619;
+  text-align: center;
+}
+.rechargeMain .couponPrice span{
+  font-weight: 500;
+  font-size: .13rem;
+  color: #E60619;
+}
+/* .rechargeMain .priceInfo{
+  position: relative;
+  width: 1.08rem;
+  height: .36rem;
+  background: #FFF0F0;
+  border-radius:0.04rem;
+  margin-left: 0.04rem;
+  padding-left: 0.04rem;
+}
+.rechargeMain .priceInfo .floorPrice{
+  font-size: .10rem;
+  color: #F83333;
+  line-height: .13rem;
+  text-align: left;
+}
+.rechargeMain .priceInfo .floorPrice .symbol{
+  font-weight: 500;
+}
+.rechargeMain .priceInfo .floorPrice .price{
+  font-weight: 500;
+  font-size: .13rem;
+  color: #F83333;
+  line-height: .20rem;
+}
+.rechargeMain .priceInfo .marketPrice{
+  font-size: .10rem;
+  color: #999999;
+  line-height: .14rem;
+  text-align: left;
+  font-style: normal;
+  text-decoration-line: line-through;
+}
+.rechargeMain .priceInfo .couponBox{
+  position: absolute;
+  right: -.14rem;
+  bottom:0;
+  width: .54rem;
+  height: .36rem;
+  background: url(../image/downIcon.png) no-repeat center;
+  background-size: 100%;
+  text-align: center;
+}
+.rechargeMain .priceInfo .couponBox .couponText{
+  font-weight: 500;
+  font-size: .1rem;
+  color: #FFFFFF;
+}
+.rechargeMain .priceInfo .couponBox .couponPrice{
+  font-weight: 500;
+  font-size: .14rem;
+  color: #FFFFFF;
+  line-height: 0.1rem;
+}
+.rechargeMain .priceInfo .couponBox .couponPrice span{
+  font-size: .11rem;
+} */
